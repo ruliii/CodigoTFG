@@ -1,0 +1,20 @@
+{% extends "myapp/base.html" %}
+
+{% block titulo %}Nueva lista{% endblock %}
+
+
+{% block content %}
+<section class="container mt-5 mb-5">
+    <form method="POST">{% csrf_token %}
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear</button>
+    </form>
+</section>
+{% endblock %}

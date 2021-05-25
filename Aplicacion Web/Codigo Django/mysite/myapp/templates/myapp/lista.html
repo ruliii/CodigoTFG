@@ -1,0 +1,25 @@
+{% extends "myapp/base.html" %}
+
+{% block titulo %}{{ nombre }}{% endblock %}
+
+
+{% block content %}
+<center>
+    <section class="container mt-5 mb-5">
+        <h2>Elementos</h2>
+        <ul class="list-group list-group-flush">
+            {% for item in productos %}
+                <li class="list-group-item">{{ item.cantidad }} {{ item.nombre }}</li>
+            {% endfor %}
+        </ul>
+        <center>
+            <a href="{% url 'add' id %}" class="btn btn-primary">Añadir elemento</a>
+            {% if productos %}
+                <a href="{% url 'vaciar' id %}" class="btn btn-primary">Vaciar Lista</a>
+            {% endif %}
+            <a href="{% url 'borrar' id %}" class="btn btn-primary">Borrar Lista</a>
+        </center>
+    </section>
+    <center><a href="{% url 'index' %}" class="btn btn-primary">Volver</a></center>
+</center>
+{% endblock %}

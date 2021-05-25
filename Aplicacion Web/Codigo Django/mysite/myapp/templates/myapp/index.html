@@ -1,0 +1,25 @@
+{% extends "myapp/base.html" %}
+
+{% block titulo %}Home{% endblock %}
+
+
+{% block content %}
+<section class="container mt-5 mb-5">
+    <section class="container mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          {% for item in listas%}
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.nombre }}</h5>
+                <p class="card-text">{{ item.descripcion }}</p>
+                <center><a href="{% url 'lista' item.id %}" class="btn btn-primary">Ver elementos</a></center>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </section>
+    <center><a href="{% url 'nuevaLista' %}" class="btn btn-primary">Nueva lista</a></center>
+</section>
+{% endblock %}
