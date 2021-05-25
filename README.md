@@ -5,6 +5,7 @@ Concretamente este repositorio contiene el codigo de los dos casos de uso desarr
 
 ## Estructura del repositorio
 
-| |Carpeta|Descipcion|
+|Carpeta|Descipcion|
+|----------------|-------------------------------|
 |Aplicaccion Web| Contienen el codigo de la aplicacion web|
 |Skill de Alexa| Contiene el codigo de la skill de alexa|
