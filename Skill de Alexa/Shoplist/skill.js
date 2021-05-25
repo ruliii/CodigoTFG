@@ -6,25 +6,17 @@ var openwhisk = require("openwhisk");
 var plugins = {
     plugins: { 
         iamauth: { 
-            iamApiKey: "VsaAFud5PEb_NTu-P6q2XTPKuPMdh2d3dBk4sjcBuczl"
+            iamApiKey: "apiKey"
         } 
     } 
 }
 var cloudant = new Cloudant({
-    url: "https://apikey-v2-1ydxv3yyaitx75lhyqswq5lfpzx5tmgmouuh5phw8peh:44575386a643de8a12d5098f93a892ab@f1890360-b63a-49e2-bd2a-33704f0e8497-bluemix.cloudantnosqldb.appdomain.cloud", 
-    username:"apikey-v2-1ydxv3yyaitx75lhyqswq5lfpzx5tmgmouuh5phw8peh",
-    password:"44575386a643de8a12d5098f93a892ab"
+    url: "url", 
+    username:"username",
+    password:"password"
 });
 
 const databaseName = "listascompra";
-
-/* CONFIGURACION DE OPENWHISK */
-
-/* OPCION MANUAL */
-/*var options = {
-    apihost:"eu-gb.functions.cloud.ibm.com",
-    api_key:"c7309e2b-83e5-4d9f-8d31-b411c36b8def:YhS4Qv3Lg2ZtXObbjDbF1CjjvrFhgCaQhONNghy76CS1eV5iMDfYBjs6qi4zK7Ar"
-}*/
 
 /* OPCCIONES DESDE ENTORNO */
 var options = {
