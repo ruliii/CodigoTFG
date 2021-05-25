@@ -4,6 +4,7 @@ Esta carpeta contiene el codigo de las diferentes acciones de la skill de alexa
 ## Estructura del repositorio
 
 |Acción|Descipcion|
+|----------------|-------------------------------|
 |add_producto| Esta acción añade un nuevo elemento a una lista|
 |clear_list| Esta acción vacia una lista |
 |create_document| Esta acción añade una nueva lista a la base de datos|
